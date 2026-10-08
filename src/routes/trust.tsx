@@ -4,25 +4,24 @@ import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 import CTA from "@/components/site/CTA";
 import CandidateScreening from "@/components/site/CandidateScreening";
-import OngoingManagement from "@/components/site/OngoingManagement";
 
 const items = [
-  { icon: ShieldCheck, title: "Elite recruitment process", desc: "Multi-stage sourcing, skills testing, communication vetting, references and background checks. Fewer than 5% of applicants pass." },
-  { icon: GraduationCap, title: "Trained specialists", desc: "Every team member is onboarded onto your ICP, brand, tools and playbooks before touching live work." },
-  { icon: FileText, title: "Documented workflows", desc: "SOPs are written, versioned and maintained by Webtap — so quality doesn't depend on any single person." },
-  { icon: LineChart, title: "KPI monitoring", desc: "Every role has a scorecard reviewed weekly. Underperformance is caught and coached, not ignored." },
-  { icon: ClipboardCheck, title: "Transparent reporting", desc: "Weekly reports, monthly business reviews and always-on visibility into your team's work." },
-  { icon: Lock, title: "Confidentiality", desc: "Mutual NDAs, least-privilege access in your systems, and support for SSO, password managers and audit trails." },
-  { icon: Handshake, title: "Long-term partnerships", desc: "We're built for retainers and multi-year relationships — most Webtap clients stay for years." },
+  { icon: ShieldCheck, title: "Role-specific matching", desc: "Skills and experience are evaluated against the responsibilities you define." },
+  { icon: GraduationCap, title: "Relevant experience", desc: "We discuss job-specific experience rather than use a one-size-fits-all checklist." },
+  { icon: FileText, title: "Clear briefs", desc: "Document the role, responsibilities and expectations before starting the search." },
+  { icon: LineChart, title: "Practical alignment", desc: "Working hours, location, availability and expectations belong in the conversation early." },
+  { icon: ClipboardCheck, title: "Employer review", desc: "You can decide which checks, interviews and selection criteria are appropriate." },
+  { icon: Lock, title: "Respect for privacy", desc: "Sensitive information and confidentiality needs should be discussed and agreed before sharing documents." },
+  { icon: Handshake, title: "Transparent communication", desc: "Clear next steps and realistic expectations support a better working relationship." },
 ];
 
 export const Route = createFileRoute("/trust")({
   head: () => ({
     meta: [
       { title: "Trust & Assurance | Webtap" },
-      { name: "description", content: "How Webtap protects quality, confidentiality and continuity across every managed remote team engagement." },
+      { name: "description", content: "How WEBTAP approaches recruitment, clarity and employer-defined hiring requirements." },
       { property: "og:title", content: "Trust & Assurance — Webtap" },
-      { property: "og:description", content: "Careful vetting, active management and long-term accountability." },
+      { property: "og:description", content: "Skills, location requirements and thoughtful candidate selection." },
     ],
   }),
   component: TrustPage,
@@ -36,10 +35,10 @@ function TrustPage() {
         <section className="container max-w-4xl">
           <span className="eyebrow">Trust & Assurance</span>
           <h1 className="font-display text-4xl md:text-6xl font-bold mt-3 text-gradient leading-tight">
-            Outsourcing should feel safer than hiring — not riskier.
+            Hire thoughtfully. Stay in control.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Every Webtap engagement is built around the same commitments: careful vetting, trained specialists, documented workflows, active performance management and confidentiality as a default.
+            We believe hiring works better when expectations are clear. Here are the principles we bring to conversations with employers and candidates.
           </p>
         </section>
 
@@ -62,12 +61,11 @@ function TrustPage() {
           </div>
 
           <p className="text-xs text-muted-foreground mt-10 text-center max-w-2xl mx-auto">
-            This page describes the operating commitments Webtap makes on every engagement. It is not a certification. Contractual terms and specific security controls are provided during procurement on request.
+            These are our working principles, not certifications or guarantees. Specific screening, privacy and service arrangements depend on the agreed engagement.
           </p>
         </section>
 
         <CandidateScreening />
-        <OngoingManagement />
         <CTA primaryLabel="Talk to a Talent Specialist" />
       </main>
       <Footer />

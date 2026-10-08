@@ -49,6 +49,12 @@ function ContactPage() {
           <TrustBadges className="mt-8" />
         </section>
 
+        <div className="container mx-auto mt-10 max-w-3xl">
+          <a href="mailto:webtap.site@gmail.com?subject=WEBTAP%20Hiring%20Inquiry" className="flex items-center justify-between gap-4 rounded-2xl border border-sky-400/30 bg-sky-400/10 p-6 text-left transition-colors hover:bg-sky-400/15">
+            <span><strong className="block text-lg text-foreground">Prefer email?</strong><span className="mt-1 block text-sm text-muted-foreground">Send the role, required location and a few details to webtap.site@gmail.com</span></span>
+            <Mail className="h-6 w-6 shrink-0 text-sky-300" />
+          </a>
+        </div>
         <CalendlyEmbed />
 
         <section className="container text-center">

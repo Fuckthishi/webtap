@@ -1,14 +1,14 @@
 import { Target, Search, CalendarCheck, Users, Megaphone, Briefcase, ClipboardList, Cpu } from "lucide-react";
 
 const services = [
-  { icon: Target, label: "Sales Development" },
-  { icon: Search, label: "Lead Generation" },
-  { icon: CalendarCheck, label: "Appointment Setting" },
-  { icon: Users, label: "Virtual Teams" },
-  { icon: Megaphone, label: "Marketing Operations" },
-  { icon: Briefcase, label: "Executive Assistants" },
-  { icon: ClipboardList, label: "Campaign Execution" },
-  { icon: Cpu, label: "Automation Workflows" },
+  { icon: Target, label: "Sales Professionals" },
+  { icon: Search, label: "Technical Specialists" },
+  { icon: CalendarCheck, label: "Appointment Setters" },
+  { icon: Users, label: "Virtual Assistants" },
+  { icon: Megaphone, label: "Marketing Talent" },
+  { icon: Briefcase, label: "Accounting & Finance" },
+  { icon: ClipboardList, label: "Operations & Admin" },
+  { icon: Cpu, label: "Software Developers" },
 ];
 
 const Row = () => (
@@ -34,7 +34,7 @@ const ServicesMarquee = () => {
   return (
     <section className="py-12 md:py-16 border-y border-border/70 bg-secondary/50">
       <div className="container">
-        <p className="text-center eyebrow mb-6">Functions we build & manage</p>
+        <p className="text-center eyebrow mb-6">Talent for the roles that matter</p>
       </div>
       <div className="marquee-mask overflow-hidden">
         <div className="flex gap-4 animate-marquee w-max">

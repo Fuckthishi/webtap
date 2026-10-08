@@ -5,12 +5,12 @@ const OngoingManagement = () => {
     <section className="py-24 md:py-32">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center mb-14">
-          <span className="eyebrow">Ongoing success management</span>
+          <span className="eyebrow">Support around the hire</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 text-gradient leading-tight">
-            We don't disappear after recruitment.
+            A clear process around your search.
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
-            Every engagement includes active performance management so your team keeps delivering — month after month.
+            Additional coordination and onboarding support may be discussed depending on the needs of your role.
           </p>
         </div>
 

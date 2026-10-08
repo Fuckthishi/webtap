@@ -9,7 +9,7 @@ export const Route = createFileRoute("/faq")({
   head: () => ({
     meta: [
       { title: "FAQ | Webtap" },
-      { name: "description", content: "Answers about hiring speed, interviews, management, replacements, AI automation and how Webtap measures performance." },
+      { name: "description", content: "Answers about WEBTAP's sourcing approach, locations, interview process and types of roles." },
       { property: "og:title", content: "Frequently Asked Questions — Webtap" },
       { property: "og:description", content: "Everything you might want to ask before you reach out." },
     ],
@@ -28,7 +28,7 @@ function FaqPage() {
             Everything to ask before you reach out.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            Service-specific questions live on each department page.
+            Have a question about a particular role or location? Get in touch and tell us what you need.
           </p>
 
           <Accordion type="single" collapsible className="space-y-3 mt-12">

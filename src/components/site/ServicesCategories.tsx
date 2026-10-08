@@ -25,7 +25,7 @@ const ServicesCategories = () => {
                   <div className="grid place-items-center w-14 h-14 rounded-2xl bg-gradient-primary text-primary-foreground shadow-glow">
                     <Icon className="w-6 h-6" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <h3 className="font-display text-xl font-bold">{c.title}</h3>
                     <p className="text-xs text-primary-glow font-semibold mt-0.5">{c.tagline}</p>
                   </div>

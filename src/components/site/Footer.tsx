@@ -24,11 +24,11 @@ const cols: { title: string; links: { to: string; label: string; external?: bool
     ],
   },
   {
-    title: "Legal",
+    title: "Get in touch",
     links: [
-      { to: "/trust", label: "Confidentiality" },
-      { to: "/trust", label: "Privacy" },
-      { to: "/trust", label: "Terms" },
+      { to: "/contact", label: "Discuss a role" },
+      { to: "/trust", label: "Our principles" },
+      { to: "/faq", label: "Hiring FAQ" },
     ],
   },
 ];

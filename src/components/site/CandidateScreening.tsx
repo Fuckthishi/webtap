@@ -6,12 +6,12 @@ const CandidateScreening = () => {
     <section className="py-24 md:py-32 bg-secondary/40 border-y border-border/70">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center mb-14">
-          <span className="eyebrow">Elite talent, vetted end-to-end</span>
+          <span className="eyebrow">A thoughtful shortlist</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 text-gradient leading-tight">
-            Every candidate is carefully vetted.
+            Relevant people. Meaningful checks.
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
-            Fewer than 5% of applicants pass. Every professional you meet has already cleared eight assessments.
+            The right checks depend on the role. We start with your requirements, including skills, hiring location and eligibility.
           </p>
         </div>
 

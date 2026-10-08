@@ -13,8 +13,8 @@ interface Props {
 const CTA = ({
   eyebrow = "Ready when you are",
   title,
-  desc = "Tell us about your business and the team you want to build. We'll come back within 24 hours with a proposed structure and a written plan.",
-  primaryLabel = "Build Your Remote Team",
+  desc = "Tell us the role, skills and preferred hiring location. We'll discuss how to source people who fit your brief.",
+  primaryLabel = "Find Your Next Hire",
   secondaryLabel = "webtap.site@gmail.com",
 }: Props) => {
   return (
@@ -27,7 +27,7 @@ const CTA = ({
           <div className="relative">
             <span className="text-xs uppercase tracking-[0.22em] text-primary-glow font-semibold">{eyebrow}</span>
             <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 leading-tight">
-              {title ?? (<>Build a remote team<br />that helps your business grow.</>)}
+              {title ?? (<>Find the right people.<br />Build what's next.</>)}
             </h2>
             <p className="mt-5 text-white/75 max-w-xl mx-auto">
               {desc}
@@ -47,7 +47,7 @@ const CTA = ({
               </Button>
             </div>
             <p className="mt-6 text-xs text-white/60">
-              Available for retainers, project builds and long-term partnerships.
+              Talent sourcing based on your role, location and hiring requirements.
             </p>
           </div>
         </div>

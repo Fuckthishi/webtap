@@ -338,46 +338,16 @@ export const pillars: Pillar[] = [
 export const getPillar = (id: Pillar["id"]) => pillars.find((p) => p.id === id)!;
 
 export const sharedFaqs = [
-  {
-    q: "How long does hiring take?",
-    a: "Most engagements go live in 10–15 business days: discovery in week one, shortlist and interviews in week two, onboarding and live delivery from week three.",
-  },
-  {
-    q: "Can I interview candidates?",
-    a: "Yes. We shortlist the top 2–3 professionals against your role brief. You interview them and choose who joins your team — you're always in control.",
-  },
-  {
-    q: "Who manages the employee?",
-    a: "Webtap does. Every engagement includes a dedicated success manager responsible for onboarding, SOPs, KPI monitoring, weekly check-ins, coaching and performance reviews.",
-  },
-  {
-    q: "What if someone leaves?",
-    a: "We replace them fast — usually within days — at no additional cost. Because Webtap owns the SOPs and history, replacements ramp quickly and continuity is protected.",
-  },
-  {
-    q: "Can I hire multiple people?",
-    a: "Absolutely. Many clients start with one role and grow into full multi-person teams across sales, support, ops and marketing over time.",
-  },
-  {
-    q: "Can Webtap build an entire team?",
-    a: "Yes. We build and manage complete remote departments — from a single specialist to a full multi-function team — with the SOPs, QA and reporting to run like an internal team.",
-  },
-  {
-    q: "Do you implement AI automation?",
-    a: "Yes. AI chatbots, workflow automation, CRM automation, AI SDR systems and AI assistants are woven into the team so your people focus on high-value work.",
-  },
-  {
-    q: "How do you measure performance?",
-    a: "Every role has a KPI scorecard reviewed weekly. You get transparent reporting, monthly business reviews and a success manager who acts on the numbers — not just reports them.",
-  },
-  {
-    q: "How are team members selected?",
-    a: "Every candidate goes through English assessment, technical testing, a professional interview, background checks, communication scoring, culture fit, reference checks and experience verification. Fewer than 5% pass.",
-  },
-  {
-    q: "Is our data confidential?",
-    a: "Every team member signs an NDA. Access is scoped through your tools with least-privilege permissions, and we support SSO, password managers and audit logging.",
-  },
+  { q: "Which countries do you work with?", a: "We focus on employer requirements in the United States, United Kingdom, Canada and Australia. Candidates can be sourced within the country, city, radius or other location you specify, subject to role and eligibility requirements." },
+  { q: "Can I request candidates only in my city or country?", a: "Yes. Tell us your preferred hiring radius, work arrangement, time zone and any legal work-eligibility rules. Those constraints guide the search." },
+  { q: "What roles can WEBTAP help me recruit for?", a: "We welcome briefs for software and technical roles, administrative assistants, sales, customer support, marketing, design, accounting and related business functions." },
+  { q: "How does the process start?", a: "Tell us about the role and the location you need. We'll discuss the search requirements and the next steps before any commitment." },
+  { q: "Can I interview candidates before hiring?", a: "Yes. The employer makes the final selection. Interviews, assessments and verification requirements can be discussed for each role." },
+  { q: "Are candidates always remote?", a: "Not necessarily. Remote, hybrid and on-site requirements can be included in a hiring brief, depending on the role and search geography." },
+  { q: "How long will sourcing take?", a: "Timing varies with the role, market, seniority and hiring restrictions. We'll discuss a realistic search plan rather than promise an unverified deadline." },
+  { q: "Do you provide team-building or ongoing support?", a: "Our main focus is finding suitable talent. If you need help coordinating multiple hires or additional onboarding support, mention it during the initial discussion so we can scope what's feasible." },
+  { q: "How does pricing work?", a: "Pricing depends on the role, hiring market and scope of service. Contact us with your brief to discuss the options." },
+  { q: "How do you handle sensitive information?", a: "Only share information needed to scope a vacancy in the first conversation. Any additional confidentiality arrangements and data-handling terms should be agreed before exchanging sensitive material." },
 ];
 
 export const industries = [

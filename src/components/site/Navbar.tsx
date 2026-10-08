@@ -7,7 +7,7 @@ import Logo from "@/components/site/Logo";
 const links = [
   { to: "/services", label: "Services" },
   { to: "/about", label: "About" },
-  { to: "/trust", label: "Trust" },
+  { to: "/trust", label: "Our approach" },
   { to: "/faq", label: "FAQ" },
 ];
 

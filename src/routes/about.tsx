@@ -3,27 +3,26 @@ import { Users, Cpu, Workflow, Target, Shield, Heart } from "lucide-react";
 import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 import CTA from "@/components/site/CTA";
-import ManagementPromise from "@/components/site/ManagementPromise";
 
 const pillars = [
-  { icon: Users, title: "People", desc: "Rigorously recruited specialists — fewer than 5% of applicants join a Webtap team." },
-  { icon: Workflow, title: "Process", desc: "Documented SOPs, weekly QA and reporting cadences that make quality repeatable." },
-  { icon: Cpu, title: "Technology", desc: "AI and automation working alongside human talent to amplify every hour." },
+  { icon: Users, title: "People", desc: "Recruitment starts with understanding the individual behind the CV and the team they may join." },
+  { icon: Workflow, title: "Process", desc: "A clear brief, relevant sourcing and transparent candidate conversations." },
+  { icon: Cpu, title: "Tools", desc: "Technology supports research and organisation without replacing human judgement." },
 ];
 
 const values = [
-  { icon: Target, title: "Own the outcome", desc: "We are accountable for the operation, not just the resume." },
-  { icon: Shield, title: "Confidential by default", desc: "NDAs, least-privilege access and audit trails on every engagement." },
-  { icon: Heart, title: "Long partnerships", desc: "We work with clients for years — not for the length of a single contract." },
+  { icon: Target, title: "Stay focused", desc: "Search for the specific skills and requirements the employer has actually requested." },
+  { icon: Shield, title: "Respect the details", desc: "Treat the hiring brief and candidate information with care and clarity." },
+  { icon: Heart, title: "Good connections", desc: "Think beyond the resume to help create better long-term working relationships." },
 ];
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "About — Managed Talent & Automation | Webtap" },
-      { name: "description", content: "Webtap is a managed talent and automation partner. We build, manage and optimise high-performing remote teams backed by AI." },
+      { name: "description", content: "WEBTAP is a recruitment and talent-matching service focused on skills, team fit and employer-defined hiring markets." },
       { property: "og:title", content: "About Webtap" },
-      { property: "og:description", content: "The managed talent partner for growing businesses." },
+      { property: "og:description", content: "Where talent meets opportunity, within your hiring requirements." },
     ],
   }),
   component: AboutPage,
@@ -37,18 +36,13 @@ function AboutPage() {
         <section className="container max-w-4xl">
           <span className="eyebrow">About Webtap</span>
           <h1 className="font-display text-4xl md:text-6xl font-bold mt-3 text-gradient leading-tight">
-            We build, manage and optimise high-performing remote teams.
+            A better match starts with a better understanding.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Webtap exists because growing businesses need more than a resume.
-            They need an operation — trained specialists, documented processes,
-            active performance management and AI-powered workflows working
-            together so results keep compounding.
+            WEBTAP was built around a straightforward idea: a good hire is not just about impressive qualifications. Skills, communication, location, work eligibility and the way someone fits a business all matter.
           </p>
           <p className="mt-4 text-lg text-muted-foreground leading-relaxed">
-            Today we run managed remote teams for SaaS, professional services,
-            healthcare, real estate, marketing agencies and more — with a
-            long-term commitment to every client we take on.
+            We focus on helping businesses in the United States, United Kingdom, Canada and Australia define their hiring needs and find people within the location and working arrangement that suits them.
           </p>
         </section>
 
@@ -56,7 +50,7 @@ function AboutPage() {
           <div className="text-center mb-12">
             <span className="eyebrow">What we're built on</span>
             <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 text-gradient">
-              People + Process + AI
+              People + Clarity + Process
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
@@ -96,7 +90,6 @@ function AboutPage() {
           </div>
         </section>
 
-        <ManagementPromise />
         <CTA primaryLabel="Talk to a Talent Specialist" />
       </main>
       <Footer />

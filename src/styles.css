@@ -199,3 +199,30 @@
 @keyframes marquee { from { transform: translateX(0);} to { transform: translateX(-50%);} }
 @keyframes accordion-down { from { height: 0 } to { height: var(--radix-accordion-content-height) } }
 @keyframes accordion-up { from { height: var(--radix-accordion-content-height) } to { height: 0 } }
+
+
+/* WEBTAP / 2026 design enhancements */
+.hero-mesh {
+  background:
+    radial-gradient(ellipse at 87% 27%, hsl(208 92% 56% / .15), transparent 45%),
+    radial-gradient(ellipse at 7% 79%, hsl(228 78% 46% / .12), transparent 42%),
+    linear-gradient(90deg, hsl(213 85% 72% / .024) 1px, transparent 1px),
+    linear-gradient(hsl(213 85% 72% / .024) 1px, transparent 1px);
+  background-size: auto, auto, 68px 68px, 68px 68px;
+  mask-image: linear-gradient(to bottom, black 60%, transparent);
+}
+a, button { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid hsl(var(--primary-glow));
+  outline-offset: 4px;
+}
+img { max-width: 100%; }
+::selection { background: hsl(210 100% 60% / .35); color: white; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

@@ -4,7 +4,7 @@ import {
   LifeBuoy, Bot, Workflow, Zap, Ticket, ShieldCheck, Cpu,
   Mail, Linkedin, PenTool, Video, Palette, TrendingUp,
   Wrench, Calculator, Wallet, DollarSign, Bot as BotIcon,
-  Sparkles, MessageCircle, Database, Rocket, Globe2, Store,
+  Sparkles, MessageCircle, Database, Rocket, Globe2, MapPin, Store,
   type LucideIcon,
 } from "lucide-react";
 
@@ -20,111 +20,78 @@ export type ServiceCategory = {
 
 export const serviceCategories: ServiceCategory[] = [
   {
-    id: "sales",
-    title: "Sales",
-    tagline: "Fill your pipeline with qualified conversations.",
-    icon: Target,
+    id: "technology", title: "Software & Technology", tagline: "Build with the right technical minds.", icon: Cpu,
     roles: [
-      { icon: Users, name: "SDRs", desc: "Outbound reps trained on your ICP and offer." },
-      { icon: Phone, name: "Cold Callers", desc: "Trained dialers booking real opportunities daily." },
-      { icon: CalendarCheck, name: "Appointment Setters", desc: "Warm-lead conversion to booked meetings." },
-      { icon: Search, name: "Lead Generation", desc: "Verified prospect lists matched to your ICP." },
-      { icon: Linkedin, name: "LinkedIn Outreach", desc: "Personalised, at-scale LinkedIn campaigns." },
-      { icon: Mail, name: "Email Outreach", desc: "Multi-inbox sequences with deliverability owned." },
+      { icon: Wrench, name: "Software Developers", desc: "Frontend, backend and full-stack profiles." },
+      { icon: Cpu, name: "Technical Specialists", desc: "Technical support, QA and IT roles." },
+      { icon: Bot, name: "AI & Automation Talent", desc: "Professionals with relevant AI and workflow skills." },
     ],
   },
   {
-    id: "support",
-    title: "Customer Support",
-    tagline: "Delight customers on every channel, 24/7.",
-    icon: Headphones,
+    id: "assistants", title: "Admin & Operations", tagline: "Find the people who keep things moving.", icon: Briefcase,
     roles: [
-      { icon: MessageCircle, name: "Live Chat", desc: "Fast, on-brand chat responses across your stack." },
-      { icon: Headphones, name: "Customer Support", desc: "Trained agents on email, tickets and voice." },
-      { icon: Wrench, name: "Technical Support", desc: "Tier 1–2 specialists for product-led teams." },
-      { icon: Phone, name: "Receptionists", desc: "Virtual reception, call routing and scheduling." },
+      { icon: ClipboardList, name: "Virtual Assistants", desc: "Scheduling, coordination and daily operations." },
+      { icon: Users, name: "Executive Assistants", desc: "High-trust support for busy leaders." },
+      { icon: Database, name: "Operations & Data", desc: "Admin, data management and process support." },
     ],
   },
   {
-    id: "marketing",
-    title: "Marketing",
-    tagline: "Ship campaigns and content — every week.",
-    icon: TrendingUp,
+    id: "sales", title: "Sales & Business Development", tagline: "People who can build relationships.", icon: Target,
     roles: [
-      { icon: MessageSquare, name: "Social Media Managers", desc: "Strategy, posting, engagement and analytics." },
-      { icon: Video, name: "Video Editors", desc: "Short-form and long-form, ready to publish." },
-      { icon: Palette, name: "Graphic Designers", desc: "Brand-consistent visuals across every channel." },
-      { icon: PenTool, name: "Copywriters", desc: "Websites, ads, emails and long-form content." },
-      { icon: Search, name: "SEO Specialists", desc: "On-page, technical and content SEO execution." },
+      { icon: Users, name: "Sales Representatives", desc: "Prospecting, pipeline and account development." },
+      { icon: CalendarCheck, name: "Appointment Setters", desc: "Scheduling and lead qualification." },
+      { icon: Search, name: "Lead Generation Specialists", desc: "Prospecting and research support." },
     ],
   },
   {
-    id: "operations",
-    title: "Operations",
-    tagline: "Run the business without the busywork.",
-    icon: Workflow,
+    id: "support", title: "Customer Experience", tagline: "Thoughtful support for your customers.", icon: Headphones,
     roles: [
-      { icon: Briefcase, name: "Executive Assistants", desc: "Inbox, calendar and priority management." },
-      { icon: ClipboardList, name: "Administrative Assistants", desc: "General admin, coordination and support." },
-      { icon: Users, name: "Project Coordinators", desc: "Task, timeline and stakeholder management." },
-      { icon: Database, name: "Data Entry", desc: "Accurate CRM, spreadsheet and system updates." },
-      { icon: TrendingUp, name: "Operations Managers", desc: "Own SOPs, KPIs and cross-team execution." },
+      { icon: Headphones, name: "Customer Support Agents", desc: "Voice, email and ticket-based support." },
+      { icon: MessageCircle, name: "Live Chat Specialists", desc: "Clear, helpful customer conversations." },
+      { icon: Wrench, name: "Technical Support", desc: "Product troubleshooting and customer care." },
     ],
   },
   {
-    id: "finance",
-    title: "Finance",
-    tagline: "Financial ops handled with precision.",
-    icon: Wallet,
+    id: "creative", title: "Marketing & Creative", tagline: "Make your ideas stand out.", icon: Palette,
     roles: [
-      { icon: Calculator, name: "Bookkeepers", desc: "Xero, QuickBooks, MYOB reconciliation and reports." },
-      { icon: DollarSign, name: "Payroll", desc: "Compliant payroll runs and superannuation." },
-      { icon: FileSpreadsheet, name: "Accountants", desc: "Month-end close, BAS and management accounts." },
+      { icon: Video, name: "Video Editors", desc: "Short-form, long-form and commercial editing." },
+      { icon: MessageSquare, name: "Social Media Managers", desc: "Content planning and community engagement." },
+      { icon: PenTool, name: "Designers & Copywriters", desc: "Visual and written creative specialists." },
     ],
   },
   {
-    id: "ai",
-    title: "AI Automation",
-    tagline: "Human talent + AI, working together.",
-    icon: Cpu,
+    id: "finance", title: "Finance & Accounting", tagline: "Detail-oriented finance professionals.", icon: Calculator,
     roles: [
-      { icon: BotIcon, name: "AI Chatbots", desc: "24/7 conversational agents for support and sales." },
-      { icon: Workflow, name: "Workflow Automation", desc: "Zapier, Make, n8n — no more manual handoffs." },
-      { icon: Database, name: "CRM Automation", desc: "Lead routing, enrichment and pipeline hygiene." },
-      { icon: Sparkles, name: "AI SDR Systems", desc: "Automated outbound with human-in-the-loop QA." },
-      { icon: BotIcon, name: "AI Assistants", desc: "Copilots for research, drafting and reporting." },
+      { icon: FileSpreadsheet, name: "Bookkeepers", desc: "Financial records and reconciliation." },
+      { icon: Calculator, name: "Accountants", desc: "Accounting professionals matched to your needs." },
+      { icon: Wallet, name: "Finance Assistants", desc: "Billing and administrative finance support." },
     ],
   },
 ];
 
 export const whyChoose = [
-  { icon: ShieldCheck, title: "Elite Recruitment", desc: "Every candidate is thoroughly screened before reaching you." },
-  { icon: Users, title: "Client Control", desc: "You choose the people joining your business." },
-  { icon: Workflow, title: "Managed Teams", desc: "We continue managing performance after hiring." },
-  { icon: Cpu, title: "AI Powered", desc: "Automation and human talent working together." },
-  { icon: Zap, title: "Fast Hiring", desc: "Receive qualified candidates quickly." },
-  { icon: Rocket, title: "Replacement Support", desc: "If someone isn't the right fit, we'll replace them." },
+  { icon: MapPin, title: "Location comes first", desc: "Tell us where your candidates must live or be legally eligible to work. We source accordingly." },
+  { icon: Search, title: "Role-first sourcing", desc: "A search built around your exact skills, experience and work arrangement." },
+  { icon: Users, title: "People, not just profiles", desc: "We consider communication and team alignment, not only keywords on a CV." },
+  { icon: ClipboardList, title: "A clear process", desc: "Understand the next steps from briefing to candidate review." },
+  { icon: ShieldCheck, title: "You stay in control", desc: "Review potential candidates and decide whom you want to interview or hire." },
+  { icon: Sparkles, title: "Flexible role coverage", desc: "From a single assistant to technical, sales and finance roles, we can discuss your hiring brief." },
 ];
 
 export const screeningSteps = [
-  "English assessment",
-  "Technical testing",
-  "Professional interview",
-  "Background checks",
-  "Communication skills",
-  "Culture fit",
-  "References",
-  "Experience verification",
+  "Skills & experience",
+  "Work location",
+  "Eligibility requirements",
+  "Communication",
+  "Availability",
+  "Role-specific checks",
 ];
 
 export const ongoingManagement = [
-  { icon: TrendingUp, title: "KPI Monitoring", desc: "Every role has a scorecard, reviewed weekly." },
-  { icon: CalendarCheck, title: "Weekly Check-ins", desc: "Recurring syncs with your success manager." },
-  { icon: ShieldCheck, title: "Quality Assurance", desc: "Sampled work reviewed against your standard." },
-  { icon: Sparkles, title: "Coaching", desc: "Continuous skill development for your team." },
-  { icon: Workflow, title: "Workflow Optimisation", desc: "We refine SOPs and automations over time." },
-  { icon: Users, title: "Team Performance Reviews", desc: "Monthly business reviews with real numbers." },
-  { icon: Zap, title: "Fast Replacements", desc: "Anyone underperforms? Replaced in days, not weeks." },
+  { icon: ClipboardList, title: "Clear role scope", desc: "Agree on what success looks like before the search starts." },
+  { icon: Users, title: "Candidate coordination", desc: "Keep the review and interview process organised." },
+  { icon: ShieldCheck, title: "Hiring alignment", desc: "Discuss work location, eligibility and practical expectations." },
+  { icon: Workflow, title: "Support when needed", desc: "Ask about additional onboarding or team-building help for your particular role." },
 ];
 
 export type Testimonial = {
@@ -137,43 +104,13 @@ export type Testimonial = {
   logo: string;
 };
 
-export const testimonials: Testimonial[] = [
-  {
-    quote: "Webtap didn't just hire us an SDR — they built the entire outbound function. Our pipeline tripled inside 90 days and it hasn't slowed since.",
-    name: "Sarah Whitmore",
-    role: "Head of Revenue",
-    company: "Northlane SaaS",
-    industry: "B2B SaaS",
-    size: "50–200 employees",
-    logo: "NL",
-  },
-  {
-    quote: "The ongoing management is the difference. Weekly KPI reviews, coaching, replacements when needed — it feels like an in-house team, not an outsourcer.",
-    name: "James O'Connor",
-    role: "COO",
-    company: "Meridian Group",
-    industry: "Professional Services",
-    size: "200+ employees",
-    logo: "MG",
-  },
-  {
-    quote: "AI automation plus their team removed 30 hours of admin a week from my calendar. That alone paid for the entire engagement in month one.",
-    name: "Priya Menon",
-    role: "Founder & CEO",
-    company: "Kindred Health",
-    industry: "Healthcare",
-    size: "10–50 employees",
-    logo: "KH",
-  },
-];
+export const testimonials: Testimonial[] = [];
 
 export const trustBadges = [
-  "Carefully Vetted Talent",
-  "Managed Teams",
-  "AI-Powered Workflows",
-  "Ongoing Support",
-  "Performance Focused",
-  "Australian Business Focus",
+  "Employer-led requirements",
+  "Location-aware sourcing",
+  "Skills & role matching",
+  "Direct communication",
 ];
 
 export const traditionalVsWebtap = {
@@ -196,9 +133,9 @@ export const traditionalVsWebtap = {
 };
 
 export const howItWorksSteps = [
-  { icon: MessageCircle, title: "Discovery Call", desc: "We learn about your business, goals, challenges and your ideal team member." },
-  { icon: Search, title: "Talent Search", desc: "We source, interview and vet the highest-quality professionals for the role." },
-  { icon: Users, title: "Client Selection", desc: "You interview the shortlisted candidates and choose who joins your team." },
-  { icon: ClipboardList, title: "Onboarding", desc: "We handle onboarding, training, SOP implementation and system setup." },
-  { icon: TrendingUp, title: "Ongoing Management", desc: "We monitor performance, coach the team, optimise workflows and replace talent if needed." },
+  { icon: ClipboardList, title: "Tell us the role", desc: "Share responsibilities, must-have skills, seniority and working arrangement." },
+  { icon: Globe2, title: "Set the location", desc: "Define your country, radius, time-zone and work-eligibility requirements." },
+  { icon: Search, title: "Focused sourcing", desc: "We look for professionals whose background matches your hiring brief." },
+  { icon: Users, title: "Review the fit", desc: "Discuss potential candidates based on skills, communication and availability." },
+  { icon: CalendarCheck, title: "Interview & decide", desc: "You choose who to meet and make the final hiring decision." },
 ];

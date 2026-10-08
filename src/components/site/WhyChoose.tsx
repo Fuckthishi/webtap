@@ -5,12 +5,12 @@ const WhyChoose = () => {
     <section className="py-24 md:py-32">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center mb-14">
-          <span className="eyebrow">Why businesses choose Webtap</span>
+          <span className="eyebrow">The WEBTAP approach</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 text-gradient leading-tight">
-            A managed partner, not just an agency.
+            Built around your hiring brief.
           </h2>
           <p className="mt-4 text-muted-foreground text-lg">
-            Six reasons growing companies pick Webtap to build and run their remote teams.
+            We don't assume that talent can come from just anywhere. Your role, location and requirements shape the search.
           </p>
         </div>
 

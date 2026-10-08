@@ -24,7 +24,7 @@ const HowItWorks = () => {
 
   // Auto-cycle through steps
   useEffect(() => {
-    if (!visible) return;
+    if (!visible || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const id = setInterval(() => {
       setActiveStep((s) => (s + 1) % howItWorksSteps.length);
     }, 2200);
