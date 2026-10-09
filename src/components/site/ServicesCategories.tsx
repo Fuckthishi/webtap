@@ -6,7 +6,7 @@ const ServicesCategories = () => {
   return (
     <section id="services" className="py-24 md:py-32">
       <div className="container">
-        <div className="max-w-2xl mx-auto text-center mb-14">
+        <div data-reveal="up" className="max-w-2xl mx-auto text-center mb-14">
           <span className="eyebrow">What we build</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 text-gradient leading-tight">
             Every role your remote team needs.
@@ -17,10 +17,10 @@ const ServicesCategories = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {serviceCategories.map((c) => {
+          {serviceCategories.map((c, i) => {
             const Icon = c.icon;
             return (
-              <div key={c.id} className="group bg-card border border-border rounded-3xl p-7 shadow-card hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col">
+              <div key={c.id} data-reveal="up" data-reveal-delay={i % 3} data-reveal-hover="true" className="group bg-card border border-border rounded-3xl p-7 shadow-card hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col">
                 <div className="flex items-center gap-4 mb-5">
                   <div className="grid place-items-center w-14 h-14 rounded-2xl bg-gradient-primary text-primary-foreground shadow-glow">
                     <Icon className="w-6 h-6" />

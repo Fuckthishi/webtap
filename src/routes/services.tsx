@@ -23,7 +23,7 @@ function ServicesPage() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
       <main className="pt-32">
-        <section className="container max-w-4xl text-center">
+        <section data-reveal="up" className="container max-w-4xl text-center">
           <span className="eyebrow">Services</span>
           <h1 className="font-display text-4xl md:text-6xl font-bold mt-3 text-gradient leading-tight">
             The people your team needs next.

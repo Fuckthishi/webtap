@@ -32,7 +32,7 @@ function TrustPage() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
       <main className="pt-36 pb-16">
-        <section className="container max-w-4xl">
+        <section data-reveal="up" className="container max-w-4xl">
           <span className="eyebrow">Trust & Assurance</span>
           <h1 className="font-display text-4xl md:text-6xl font-bold mt-3 text-gradient leading-tight">
             Hire thoughtfully. Stay in control.
@@ -44,10 +44,10 @@ function TrustPage() {
 
         <section className="container max-w-5xl mt-16">
           <div className="grid md:grid-cols-2 gap-5">
-            {items.map((it) => {
+            {items.map((it, i) => {
               const Icon = it.icon;
               return (
-                <div key={it.title} className="bg-card border border-border rounded-2xl p-7 shadow-card hover:border-primary/40 transition-colors flex gap-5">
+                <div key={it.title} data-reveal="up" data-reveal-delay={i % 2} data-reveal-hover="true" className="bg-card border border-border rounded-2xl p-7 shadow-card hover:border-primary/40 transition-colors flex gap-5">
                   <span className="grid place-items-center w-12 h-12 rounded-xl bg-gradient-primary text-primary-foreground shadow-glow shrink-0">
                     <Icon className="w-6 h-6" />
                   </span>

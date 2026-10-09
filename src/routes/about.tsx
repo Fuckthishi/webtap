@@ -33,7 +33,7 @@ function AboutPage() {
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
       <main className="pt-36 pb-16">
-        <section className="container max-w-4xl">
+        <section data-reveal="up" className="container max-w-4xl">
           <span className="eyebrow">About Webtap</span>
           <h1 className="font-display text-4xl md:text-6xl font-bold mt-3 text-gradient leading-tight">
             A better match starts with a better understanding.
@@ -47,17 +47,17 @@ function AboutPage() {
         </section>
 
         <section className="container max-w-5xl mt-24">
-          <div className="text-center mb-12">
+          <div data-reveal="up" className="text-center mb-12">
             <span className="eyebrow">What we're built on</span>
             <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 text-gradient">
               People + Clarity + Process
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {pillars.map((p) => {
+            {pillars.map((p, i) => {
               const Icon = p.icon;
               return (
-                <div key={p.title} className="bg-card border border-border rounded-2xl p-8 shadow-card">
+                <div key={p.title} data-reveal="up" data-reveal-delay={i} data-reveal-hover="true" className="bg-card border border-border rounded-2xl p-8 shadow-card">
                   <div className="grid place-items-center w-14 h-14 rounded-2xl bg-gradient-primary text-primary-foreground shadow-glow mb-5">
                     <Icon className="w-6 h-6" />
                   </div>
@@ -70,17 +70,17 @@ function AboutPage() {
         </section>
 
         <section className="container max-w-5xl mt-24">
-          <div className="text-center mb-12">
+          <div data-reveal="up" className="text-center mb-12">
             <span className="eyebrow">Our values</span>
             <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 text-gradient">
               How we work.
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {values.map((v) => {
+            {values.map((v, i) => {
               const Icon = v.icon;
               return (
-                <div key={v.title} className="bg-card border border-border rounded-2xl p-7 shadow-card hover:border-primary/40 transition-colors">
+                <div key={v.title} data-reveal="up" data-reveal-delay={i} data-reveal-hover="true" className="bg-card border border-border rounded-2xl p-7 shadow-card hover:border-primary/40 transition-colors">
                   <Icon className="w-6 h-6 text-primary-glow mb-3" />
                   <h3 className="font-display text-lg font-bold">{v.title}</h3>
                   <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{v.desc}</p>

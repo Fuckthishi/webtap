@@ -23,11 +23,11 @@ function FaqPage() {
       <Navbar />
       <main className="pt-36 pb-16">
         <section className="container max-w-3xl">
-          <span className="eyebrow">Frequently asked</span>
-          <h1 className="font-display text-4xl md:text-6xl font-bold mt-3 text-gradient leading-tight">
+          <span data-reveal="up" className="eyebrow">Frequently asked</span>
+          <h1 data-reveal="up" className="font-display text-4xl md:text-6xl font-bold mt-3 text-gradient leading-tight">
             Everything to ask before you reach out.
           </h1>
-          <p className="mt-6 text-lg text-muted-foreground">
+          <p data-reveal="up" className="mt-6 text-lg text-muted-foreground">
             Have a question about a particular role or location? Get in touch and tell us what you need.
           </p>
 
@@ -35,6 +35,8 @@ function FaqPage() {
             {sharedFaqs.map((f, i) => (
               <AccordionItem
                 key={i}
+                data-reveal="up"
+                data-reveal-delay={i % 3}
                 value={`item-${i}`}
                 className="bg-card border border-border rounded-2xl px-5 shadow-card data-[state=open]:border-primary/40 transition-colors"
               >

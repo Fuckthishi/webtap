@@ -32,7 +32,7 @@ export default function VisualStory() {
   return (
     <section className="relative py-20 md:py-28">
       <div className="container">
-        <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+        <div data-reveal="up" className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <span className="eyebrow">A focused approach</span>
             <h2 className="mt-3 font-display text-3xl font-bold leading-tight md:text-5xl">
@@ -44,10 +44,10 @@ export default function VisualStory() {
           </p>
         </div>
         <div className="mt-12 grid gap-5 md:grid-cols-3">
-          {cards.map((card) => {
+          {cards.map((card, i) => {
             const Icon = card.icon;
             return (
-              <article key={card.title} className="group overflow-hidden rounded-[1.75rem] border border-white/10 bg-card transition-all duration-500 hover:-translate-y-2 hover:border-sky-400/40 hover:shadow-glow">
+              <article key={card.title} data-reveal="scale" data-reveal-delay={i} data-reveal-hover="true" className="group overflow-hidden rounded-[1.75rem] border border-white/10 bg-card transition-all duration-500 hover:-translate-y-2 hover:border-sky-400/40 hover:shadow-glow">
                 <div className="relative h-56 overflow-hidden md:h-64">
                   <img src={card.image} alt={card.alt} loading="lazy" decoding="async" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#091223]/65 to-transparent" />
@@ -62,7 +62,7 @@ export default function VisualStory() {
             );
           })}
         </div>
-        <div className="mt-9 text-center">
+        <div data-reveal="up" className="mt-9 text-center">
           <Link to="/contact" className="inline-flex items-center gap-2 text-sm font-semibold text-sky-300 transition-colors hover:text-white">
             Tell us what you need <ArrowUpRight className="h-4 w-4" />
           </Link>

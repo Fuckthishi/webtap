@@ -34,7 +34,7 @@ const ServicesMarquee = () => {
   return (
     <section className="py-12 md:py-16 border-y border-border/70 bg-secondary/50">
       <div className="container">
-        <p className="text-center eyebrow mb-6">Talent for the roles that matter</p>
+        <p data-reveal="up" className="text-center eyebrow mb-6">Talent for the roles that matter</p>
       </div>
       <div className="marquee-mask overflow-hidden">
         <div className="flex gap-4 animate-marquee w-max">

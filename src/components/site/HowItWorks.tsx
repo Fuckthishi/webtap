@@ -9,6 +9,10 @@ const HowItWorks = () => {
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
+      setVisible(true);
+      return;
+    }
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -34,12 +38,12 @@ const HowItWorks = () => {
   return (
     <section id="process" className="py-24 md:py-32 bg-secondary/40 border-y border-border/70 overflow-hidden">
       <div className="container">
-        <div className="max-w-2xl mx-auto text-center mb-16">
-          <span className="eyebrow animate-fade-in">How it works</span>
-          <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 text-gradient leading-tight animate-fade-up">
+        <div data-reveal="up" className="max-w-2xl mx-auto text-center mb-16">
+          <span className="eyebrow">How it works</span>
+          <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 text-gradient leading-tight">
             From discovery to a fully managed team.
           </h2>
-          <p className="mt-4 text-muted-foreground text-lg animate-fade-up" style={{ animationDelay: "120ms" }}>
+          <p className="mt-4 text-muted-foreground text-lg">
             A clear, five-step process built to remove the risk from building a remote team.
           </p>
         </div>

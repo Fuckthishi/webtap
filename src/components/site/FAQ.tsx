@@ -6,7 +6,7 @@ const FAQ = () => {
   return (
     <section id="faq" className="py-24 md:py-32">
       <div className="container max-w-3xl">
-        <div className="text-center mb-12">
+        <div data-reveal="up" className="text-center mb-12">
           <span className="eyebrow">FAQ</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mt-3 text-gradient leading-tight">
             Answers before you book.
@@ -26,6 +26,8 @@ const FAQ = () => {
           {sharedFaqs.slice(0, 6).map((f, i) => (
             <AccordionItem
               key={i}
+              data-reveal="up"
+              data-reveal-delay={i % 3}
               value={`item-${i}`}
               className="bg-card border border-border rounded-2xl px-5 data-[state=open]:border-primary/40 transition-colors shadow-card"
             >

@@ -20,7 +20,7 @@ const CTA = ({
   return (
     <section id="contact" className="py-24 md:py-32">
       <div className="container">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-dark p-10 md:p-16 text-center text-white shadow-elegant">
+        <div data-reveal="scale" className="relative overflow-hidden rounded-3xl bg-gradient-dark p-10 md:p-16 text-center text-white shadow-elegant">
           <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-gradient-primary opacity-30 blur-3xl rounded-full pointer-events-none animate-glow-pulse" />
           <div className="absolute inset-0 grid-pattern opacity-[0.05] pointer-events-none [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]" />
 
