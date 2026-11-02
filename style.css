@@ -11,3 +11,25 @@
 #booking-dialog{width:min(1000px,calc(100% - 32px));max-height:94dvh;padding:0;background:#f2f1ed;color:#101010;border:1px solid #888;overflow:auto}#booking-dialog[open]{display:flex;flex-direction:column}.booking-header{display:flex;justify-content:space-between;gap:20px;padding:24px 28px 18px;background:#101010;color:#f2f1ed;flex-shrink:0}.booking-header h2{font-size:25px;margin:13px 0 8px;letter-spacing:-.8px}.booking-header p{font-size:12px;color:#aaa;margin:0}.booking-header>button{color:#f2f1ed;background:none;border:1px solid #555;width:34px;height:34px;font-size:25px;line-height:1;flex-shrink:0}.booking-state{display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;font-size:12px;flex-shrink:0}.booking-state[hidden]{display:none}.booking-spinner{width:13px;height:13px;border:1px solid #bbb;border-top-color:#111;border-radius:50%;animation:spin 1s linear infinite}.booking-state.is-error .booking-spinner{display:none}#retry-booking{background:none;border:0;border-bottom:1px solid #777;padding:3px;font-size:12px;color:inherit}#calendly-embed{width:100%;height:620px;min-height:380px;flex:1 0 500px;background:#f2f1ed}#calendly-embed iframe{display:block;width:100%;height:100%;border:0}.booking-footer{padding:15px 24px;border-top:1px solid #ccc;display:flex;justify-content:space-between;gap:15px;font-size:10px;flex-shrink:0}.booking-footer>span{color:#666}.booking-footer>a{text-decoration:underline;text-underline-offset:3px}@media(max-width:700px){#booking-dialog{width:100%;max-width:100%;max-height:100dvh;height:100dvh;margin:0;border:0}.booking-header{padding:18px 18px 16px}.booking-header h2{font-size:21px;max-width:245px}.booking-header p{font-size:11px}.booking-header .eyebrow{font-size:8px}.booking-footer{padding:15px 14px;font-size:9px}.booking-state{font-size:11px;padding:12px;flex-wrap:wrap}#calendly-embed{min-height:480px;flex-basis:550px}}
 
 .booking-header{position:sticky;top:0;z-index:2}
+
+/* Readable action labels and comfortable tap targets. */
+.header nav a{font-size:16px;min-height:44px;display:inline-flex;align-items:center}
+.nav-cta{font-size:16px;min-height:44px;align-items:center}
+.button,.hero-copy>.button,.contact-bottom .button{font-size:16px;line-height:1.4;min-height:52px}
+.button>span{flex-shrink:0}
+.text-link{font-size:16px;line-height:1.4;min-height:44px;align-items:center}
+.faq summary{font-size:16px;line-height:1.5;min-height:56px;align-items:center}
+.footer>a:last-child{font-size:14px;min-height:44px;display:inline-flex;align-items:center}
+.booking-footer{flex-wrap:wrap;align-items:center}
+.booking-footer>a{font-size:14px;line-height:1.5;min-height:44px;display:inline-flex;align-items:center}
+#retry-booking{font-size:16px;min-height:44px}
+.art-bottom button,.booking-header>button,.dialog-top>button{min-width:44px;min-height:44px}
+.round-arrow{min-width:44px;min-height:44px}
+dialog input,dialog select,dialog textarea{font-size:16px}
+@media(max-width:900px){.header nav{display:none}}
+@media(max-width:700px){
+  .hero-copy>.button{max-width:100%;gap:20px}
+  .hero-copy>.text-link{display:flex;width:max-content;max-width:100%;margin:12px 0 0;gap:15px}
+  .contact-bottom .button{gap:20px}
+  .service-row{grid-template-columns:23px minmax(0,1fr) 44px}
+}
