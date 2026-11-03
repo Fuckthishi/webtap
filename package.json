@@ -9,7 +9,9 @@
     "build": "node scripts/build.mjs",
     "build:dev": "node scripts/build.mjs",
     "preview": "node scripts/serve.mjs --dist",
-    "check": "node --check app.js && node --check booking.js && node --check scripts/build.mjs && node --check scripts/serve.mjs"
+    "check": "node --check app.js && node --check booking.js && node --check showcase.js && node --check scripts/build.mjs && node --check scripts/serve.mjs"
   },
-  "engines": { "node": ">=18" }
+  "engines": {
+    "node": ">=18"
+  }
 }

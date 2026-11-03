@@ -8,7 +8,9 @@ const files = new Map([
   ['index.html', 'text/html; charset=utf-8'],
   ['style.css', 'text/css; charset=utf-8'],
   ['app.js', 'text/javascript; charset=utf-8'],
-  ['booking.js', 'text/javascript; charset=utf-8']
+  ['booking.js', 'text/javascript; charset=utf-8'],
+  ['showcase.js', 'text/javascript; charset=utf-8'],
+  ['assets/hasan-saleh.webp', 'image/webp']
 ]);
 createServer(async (req, res) => {
   if (!['GET', 'HEAD'].includes(req.method)) {

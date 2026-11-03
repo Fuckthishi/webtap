@@ -54,7 +54,7 @@ async function startBooking() {
   try {
     await loadBookingScript();
     window.Calendly.initInlineWidget({
-      url: 'https://calendly.com/hassansalehh753/30min?hide_event_type_details=1&background_color=f2f1ed&text_color=101010&primary_color=101010',
+      url: 'https://calendly.com/hassansalehh753/30min?hide_event_type_details=1&background_color=f2f1ed&text_color=101010&primary_color=0071e3',
       parentElement: bookingEmbed
     });
     const frame = bookingEmbed.querySelector('iframe');
